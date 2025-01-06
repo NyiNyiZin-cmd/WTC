@@ -796,10 +796,6 @@ video {
     position: static;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
   }
