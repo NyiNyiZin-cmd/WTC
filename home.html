@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- css -->
+   <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+  <!-- nav -->
+
+  <nav class="bg-white text-black">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo/Brand -->
+            <div class="flex items-center">
+                <img src="logo.svg" alt="Logo" class="h-8 w-8">
+                <span class="ml-2 text-xl font-bold">Brand</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="home.html" class="hover:text-gray-300 uppercase">home</a>
+                <a href="#about" class="hover:text-gray-300 uppercase">about</a>
+                <a href="#work" class="hover:text-gray-300 uppercase">work</a>
+                <a href="#process" class="hover:text-gray-300 uppercase">process</a>
+                <a href="#services" class="hover:text-gray-300 uppercase">services</a>
+                <a href="#testimonilas" class="hover:text-gray-300 uppercase">testimonilas</a>
+                <a href="#contact" class="hover:text-gray-300 uppercase">contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden pb-4">
+            <div class="flex flex-col space-y-4">
+              <a href="#home" class="hover:text-gray-300 uppercase">home</a>
+              <a href="#about" class="hover:text-gray-300 uppercase">about</a>
+              <a href="#work" class="hover:text-gray-300 uppercase">work</a>
+              <a href="#process" class="hover:text-gray-300 uppercase">process</a>
+              <a href="#services" class="hover:text-gray-300 uppercase">services</a>
+              <a href="#testimonilas" class="hover:text-gray-300 uppercase">testimonilas</a>
+              <a href="#contact" class="hover:text-gray-300 uppercase">contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <!-- home -->
+
+  <div id="HOME" class="bg-gray-300 mx-auto h-fit">
+
+    <div class="head  text-center py-5">
+      <h5 class="text-3xl font-bold mt-5 py-5">UI/UX & Graphic Designer</h5>
+      <p>I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.</p>
+    </div>
+
+
+    <div class="flex flex-wrap justify-center">
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/3c91b03222c4c384682f2a5e17133c83.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/67cdc1683f91f9916de003ca3c94ef57.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/b5ff8a32f929f70e6807dbbf9cfe885a.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/8650a2e29ec10a92a53af08f6928ec4a.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+      
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/1408399b2bde48bdcc77c5af79570d81.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/3c5089eed56c7080ce737e6372c33008.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/f4d38258374ec5ffdd5138ad31075de2.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+      <div class="w-3/4 h-52 sm:w-1/2 md:w-1/4">
+        <img src="/img/eb181a04ced9a9b74087720efc102d9e.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+      <!-- footer -->
+      <footer class="bg-black text-white-500 py-8">
+        <div class="container mx-auto px-4">
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+  
+            <div class="mb-6">
+              <h3 class="text-white text-xl font-bold mb-4">
+                Piroll Design, Inc
+              </h3>
+              <p class="text-gray-300">
+                @2017 Piroll.All rights reserved. <br />
+                Designed by robirurk.
+              </p>
+            </div>
+  
+            <div class="mb-6 lg:flex justify-end">
+              <ul class="text-gray-300">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-white">hello@piroll@theme.com</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-white">+44 987 065 908</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="mb-6 lg:flex justify-end">
+              <ul class="text-gray-300">
+                <li class="mb-2 hover:text-white">Projects</li>
+                <li class="mb-2 hover:text-white">About</li>
+                <li class="mb-2 hover:text-white">Services</li>
+                <li class="mb-2 hover:text-white">Carreer</li>
+              </ul>
+            </div>
+            <div class="mb-6 ">
+              <ul class="text-gray-300">
+                <li class="mb-2 hover:text-white">News</li>
+                <li class="mb-2 hover:text-white">Events</li>
+                <li class="mb-2 hover:text-white">Contact</li>
+                <li class="mb-2 hover:text-white">Legals</li>
+              </ul>
+            </div>
+            <div class="mb-6">
+              <ul class="text-gray-300">
+                <li class="mb-2 hover:text-white">Facebook</li>
+                <li class="mb-2 hover:text-white">Twitter</li>
+                <li class="mb-2 hover:text-white">Instagram</li>
+                <li class="mb-2 hover:text-white">Dribbble</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+</body>
+</html>
