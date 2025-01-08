@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTC</title>
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="output.css" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        font-family: "Montserrat", Nunito Sans;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- nav -->
+    <nav class="bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo/Brand -->
+          <div class="flex items-center">
+            <img src="logo.svg" alt="Logo" class="h-8 w-8" />
+            <span class="ml-2 text-xl font-bold">Brand</span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <a href="home.html" class="hover:text-gray-300 uppercase">home</a>
+            <a href="about.html" class="hover:text-gray-300 uppercase">about</a>
+            <a href="#work" class="hover:text-gray-300 uppercase">work</a>
+            <a href="#process" class="hover:text-gray-300 uppercase">process</a>
+            <a href="service.html" class="hover:text-gray-300 uppercase"
+              >services</a
+            >
+            <a href="#testimonilas" class="hover:text-gray-300 uppercase"
+              >testimonilas</a
+            >
+            <a href="contact.html" class="hover:text-gray-300 uppercase"
+              >contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="lg:hidden" onclick="toggleMenu()">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden pb-4">
+          <div class="flex flex-col space-y-4">
+            <a href="#home" class="hover:text-gray-300 uppercase">home</a>
+            <a href="about.html" class="hover:text-gray-300 uppercase">about</a>
+            <a href="#work" class="hover:text-gray-300 uppercase">work</a>
+            <a href="#process" class="hover:text-gray-300 uppercase">process</a>
+            <a href="service.html" class="hover:text-gray-300 uppercase"
+              >services</a
+            >
+            <a href="#testimonilas" class="hover:text-gray-300 uppercase"
+              >testimonilas</a
+            >
+            <a href="contact.html" class="hover:text-gray-300 uppercase">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section
+      class="bg-[url('img/about-bg.jpg')] flex justify-center items-center bg-cover bg-bottom bg-no-repeat w-full h-80"
+    >
+      <div class="text-center p-5 text-white">
+        <h1 class="text-3xl font-bold mb-5">Amelia Woods</h1>
+        <p>
+          I am Graphic & Web Designer based in New York,<br />
+          specilalizing in User Interface Design and Development.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-[#10c9c3] py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="flex items-center justify-center gap-4 text-white">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="text-2xl font-bold">548</div>
+              <div class="text-sm uppercase">Projects Completed</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-4 text-white">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="text-2xl font-bold">1465</div>
+              <div class="text-sm uppercase">Working Hours</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-4 text-white">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="text-2xl font-bold">612</div>
+              <div class="text-sm uppercase">Positive Feedbacks</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-4 text-white">
+            <div class="flex-shrink-0">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="text-2xl font-bold">735</div>
+              <div class="text-sm uppercase">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-[#f5f5f5]">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Image Section -->
+          <div class="relative">
+            <img
+              src="img/about-photo.jpg"
+              alt="Decorative artwork"
+              class="w-full"
+            />
+          </div>
+
+          <!-- Content Section -->
+          <div class="space-y-8">
+            <h2 class="text-3xl font-bold">About me</h2>
+            <div class="space-y-4 text-gray-600">
+              <p>
+                Given let waters air sea had you'll, may seed abundantly fish.
+                Were, you'll earth forth winged above brought. Own darkness
+                they're him can't fourth sea place have.
+              </p>
+              <p>
+                So the above May stars cattle fruitful face shall. Tree it,
+                winged. Every signs male firmament us. Morning him.
+              </p>
+            </div>
+            <img src="/img/about-signature.svg" alt="Signature" class="h-12" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Need a Project?</h2>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Let us know what you're looking for in an agency. We'll take a look
+          and see if this could be the start of something beautiful.
+        </p>
+        <button
+          class="bg-[#10c9c3] text-white px-8 py-3 rounded-md hover:bg-teal-500 transition-colors duration-300"
+        >
+          LET'S TALK
+        </button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-white-500 py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div class="mb-6">
+            <h3 class="text-white text-xl font-bold mb-4">
+              Piroll Design, Inc
+            </h3>
+            <p class="text-gray-300">
+              @2017 Piroll.All rights reserved. <br />
+              Designed by robirurk.
+            </p>
+          </div>
+
+          <div class="mb-6 lg:flex justify-end">
+            <ul class="text-gray-300">
+              <li class="mb-2">
+                <a href="#" class="hover:text-white">hello@piroll@theme.com</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:text-white">+44 987 065 908</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6 lg:flex justify-end">
+            <ul class="text-gray-300">
+              <li class="mb-2 hover:text-white">Projects</li>
+              <li class="mb-2 hover:text-white">About</li>
+              <li class="mb-2 hover:text-white">Services</li>
+              <li class="mb-2 hover:text-white">Carreer</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <ul class="text-gray-300">
+              <li class="mb-2 hover:text-white">News</li>
+              <li class="mb-2 hover:text-white">Events</li>
+              <li class="mb-2 hover:text-white">Contact</li>
+              <li class="mb-2 hover:text-white">Legals</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <ul class="text-gray-300">
+              <li class="mb-2 hover:text-white">Facebook</li>
+              <li class="mb-2 hover:text-white">Twitter</li>
+              <li class="mb-2 hover:text-white">Instagram</li>
+              <li class="mb-2 hover:text-white">Dribbble</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
